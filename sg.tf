@@ -21,8 +21,8 @@ resource "aws_security_group" "sg" {
 
   # SSH access from anywhere
   ingress {
-    from_port   = 2000
-    to_port     = 2000
+    from_port   = 4000
+    to_port     = 4000
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
